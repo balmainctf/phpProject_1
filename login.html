@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="conent-type">
+	<title>登录</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		form{
+			margin:10%;
+		}
+		form input[type="submit"]{
+			text-align: center;
+			margin-left: 50%;
+		}
+	</style>
+</head>
+<body>
+	<form action="login.php" method="post">
+		<table width=30% border=1 cellspacing="0" cellpadding="0" bgcolor="#ccc" >
+			<tr>
+				<td>用户名：</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" name="act" value="登录"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
