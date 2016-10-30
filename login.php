@@ -1,6 +1,5 @@
 <?php
 header("content-type:text/html;charset=utf8");
-
 $username = $_POST['username'];
 $password = md5($_POST['password']);
 
@@ -21,6 +20,13 @@ if(!$re){
 $arr = mysql_fetch_assoc($re);
 
 if(!empty($arr)){
+	//创建cookie
+	//setcookie('adminid',$arr['id'],0,'/');
+	//setcookie('username',$username,0,'/');
+	//创建session
+	session_start();
+	$_SESSION['adminid'] = $arr['id'];
+	$_SESSION['username'] = $arr['username'];
 	header("location:index.php");
 }else{
 	header("location:login.html");

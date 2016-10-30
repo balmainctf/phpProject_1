@@ -1,6 +1,6 @@
 <?php
 header("content-type:text/html;charset=utf8");
-
+require_once '../public/isLogin.php';
 //连接数据库，查询数据
 mysql_connect('localhost','root','123') or die("链接数据库失败");
 mysql_set_charset('utf8');

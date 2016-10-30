@@ -18,3 +18,5 @@ create table news(
 	type varchar(10),
 	pubTime datetime
 );
+
+select * from news oder by id desc limit 0,5;

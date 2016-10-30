@@ -1,6 +1,6 @@
 <?php
 header("content-type:text/html;charset=utf8");
-
+require_once '../public/isLogin.php';
 //接收数据
 $title = $_POST['title'];
 $author = $_POST['author'];

@@ -1,5 +1,7 @@
 <?php
 header("content-type:text/html;charset=utf8");
+require_once '../public/isLogin.php';
+
 mysql_connect('localhost','root','123');
 mysql_set_charset('utf8');
 mysql_select_db("pra");
