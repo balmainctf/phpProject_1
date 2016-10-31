@@ -12,6 +12,15 @@
 		form{
 			margin:10%;
 		}
+		form input{
+			display: inline-block;
+			height: 30px;
+			line-height: 30px;
+		}
+		img{
+			vertical-align: middle;
+
+		}
 		form input[type="submit"]{
 			text-align: center;
 			margin-left: 50%;
@@ -20,7 +29,7 @@
 </head>
 <body>
 	<form action="login.php" method="post">
-		<table width=30% border=1 cellspacing="0" cellpadding="0" bgcolor="#ccc" >
+		<table width=60% border=1 cellspacing="0" cellpadding="0" bgcolor="#ccc" >
 			<tr>
 				<td>用户名：</td>
 				<td><input type="text" name="username"></td>
@@ -30,9 +39,14 @@
 				<td><input type="password" name="password"></td>
 			</tr>
 			<tr>
+				<td>验证码：</td>
+				<td><input type="text" name="verify"><img src="./verify.php"></td>
+			</tr>
+			<tr>
 				<td colspan="2"><input type="submit" name="act" value="登录"></td>
 			</tr>
 		</table>
 	</form>
+
 </body>
 </html>
